@@ -1,0 +1,48 @@
+graph ""
+   {
+   node [fontsize=10,width=".2", height=".2", margin=0, style=filled];
+#   graph[fontsize=8];
+
+
+   subgraph cluster1
+   {
+   label="BASE"
+   b_root ;
+   b_root [label="mypackage"] ;
+   b_root -- b_classA;
+   b_classA [label="class A", color=salmon2] ;
+   b_classA -- b_fieldB ;
+   b_fieldB [label="int myfield"] ;
+   b_classA -- b_methC ;
+   b_methC [label="float foo()", color=darkseagreen] ;
+   }
+
+   subgraph cluster2
+   {
+   label="FEATURE_A"
+   d_root ;
+   d_root [label="mypackage"] ;
+   d_root -- d_classA;
+   d_classA [label="class A", color=salmon2] ;
+   d_classA -- d_methC ;
+   d_methC [label="float foo()", color=darkseagreen] ;
+   d_classB [label="class B"] ;
+   d_root -- d_classB;
+   }
+
+   subgraph cluster3
+   {
+   label="generated product"
+   c_root ;
+   c_root [label="mypackage"] ;
+   c_root -- c_classA;
+   c_classA [label="class A", color=salmon2] ;
+   c_classA -- c_fieldB ;
+   c_fieldB [label="int myfield"] ;
+   c_classA -- c_methC ;
+   c_methC [label="float foo()", color=darkseagreen] ;
+    c_classB [label="class B"] ;
+    c_root -- c_classB;
+   }
+
+}

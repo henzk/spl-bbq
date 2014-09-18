@@ -1,0 +1,342 @@
+<div class="slide-layout-title">
+	<h1>Software Product Lines</h1>
+	<h2>quick 20min intro</h2>
+	
+	<table style="margin-top:150px">
+	    <tr>
+	        <td width="20%"><img class="responsive" src="slides/schnapptack_large.png" /></td>
+	        <td width="80%"><p style="text-align:right;font-size:normal;">Hendrik Speidel<br>schnapptack GmbH<br>für Webdev BBQ II @ LightWerk 16.9.2014</p></td>
+	    </tr>
+	</table>
+	
+	
+</div>
+<hr>
+<div>
+	<h1>Product lines</h1>
+	<h2>some examples</h2>
+</div>
+<hr>
+<div style="text-align:center">
+	<img class="responsive" src="slides/audi.png" />
+	<p style="align:center;font-size:normal;"><a href="http://www.audi.de/" target="_blank">www.audi.de</a></p>
+</div>
+<hr>
+<div style="text-align:center">
+	<img class="responsive" src="slides/amodoro.png" />
+	<p style="align:center;font-size:normal;"><a href="http://www.amodoro.de/" target="_blank">www.amodoro.de</a></p>
+</div>
+<hr>
+<div style="text-align:center">
+	<img class="responsive" src="slides/effonline.png" />
+	<p style="align:center;font-size:normal;"><a href="http://www.effizienzhaus-online.de/" target="_blank">www.effizienzhaus-online.de</a></p>
+</div>
+<hr>
+<div style="text-align:center">
+	<img class="stretch" width="80%" src="slides/win8.png" />
+	<p style="align:center;font-size:normal;"><a href="http://www.microsoft.com/" target="_blank">Microsoft Windows 8</a></p>
+</div>
+<hr>
+<div style="text-align:center">
+	<img class="responsive" class="stretch" width="80%" src="slides/kconfig.png" />
+	<p style="align:center;font-size:normal;"><a href="http://www.kernel.org/" target="_blank">www.kernel.org</a></p>
+</div>
+<hr>
+<div style="text-align:center">
+	<img class="responsive" src="slides/induux.png" />
+	<p style="align:center;font-size:normal;"><a href="http://www.induux.com/" target="_blank">www.induux.com</a></p>
+</div>
+<hr>
+<div>
+	<h1>Product lines</h1>
+	<h2>some examples</h2>
+	<ul>
+	    <li>Physical Product lines
+	        <ul>
+	            <li>Cars (audi.de)</li>
+	            <li>Wedding Rings (amodoro.de)</li>
+	            <li>House Refurbishment (effizienzhaus-online.de)</li>
+	        </ul>
+	    </li>
+	    <li>Software Product Lines
+	        <ul>
+	            <li>different Windows Flavours (microsoft.com)</li>
+	            <li>Linux Kernel (kernel.org)</li>
+	            <li>many SaaS Products (e.g. induux.com)</li>
+	        </ul>
+	    </li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>Clone and Own</h1>
+	<ul>
+	    <li>Simple: ctrl+c ctrl+v</li>
+	    <li>new Project: copy a similar one</li>
+	    <li>project templates are essentially clones</li>
+	    <li>not always bad, but smelly</li>
+	    <li>creates bugfixing, upgrading problems</li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>Some Alternatives</h1>
+	<ul>
+	    <li>OO Inheritance - small scale</li>
+	    <li>Libraries - require integration</li>
+	    <li>Components - very specific</li>
+	    <li>Preprocessors - ifdef hell</li>
+	    <li>Frameworks/Plugin Systems - high preplanning effort, runtime penalty</li>
+	    <li>negative Variability: hide functionality on demand</li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>Feature Oriented Programming</h1>
+	<h2>What is a feature?</h2>
+	<ul>
+	    <li>satisfy a stakeholders requirement</li>
+	    <li>implement and encapsulate a design decision</li>
+	    <li>provide an increment of functionality</li>
+	    <li>present a potential configuration option</li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>Variability Modeling</h1>
+	<h2>formally describe your product line</h2>
+	<table>
+	<tr><td>
+	Modeling Tools:
+	<ul>
+        <li>FODA Diagram</li>
+	    <li>boolean expression:<br> <tt>BASE & (SEARCH => FILTER)</tt></li>
+	    <li>CVL</li>
+	    <li>Clafer</li>
+	    <li>GUIDSL, VELVET, TVL, ...</li>
+	</ul>
+	</td>
+	<td><img class="responsive" src="slides/fm.png" />
+	</td>
+	</tr>
+	</table>
+</div>
+<hr>
+<div>
+	<h1>Feature Composition</h1>
+    <h2>generate lots of different products</h2>
+    <ul>
+        <li>Select product from feature model</li>
+        <li>generate product automatically</li>
+    </ul>
+    <ul>
+        <li>engineer your domain, not your application</li>
+    </ul>
+</div>
+<hr>
+<div>
+	<h1>Anatomy of a webapp</h1>
+    <h2>hierarchically structured software artefacts</h2>
+    <ul>
+        <li>data model</li>
+        <li>backend code</li>
+        <li>frontend code</li>
+        <li>templates</li>
+        <li>stylesheets</li>
+        <li>assets</li>
+        <li>configuration files</li>
+        <li>Makefile</li>
+        <li>...</li>
+    </ul>
+</div>
+<hr>
+<div>
+	<h1>Superimpose</h1>
+	<h2>all the things</h2>
+<table>
+<tr>
+
+<td>
+
+	<ul>
+		<li>Superimposition: recursive structural merge</li>
+		<li>language agnostic</li>
+	</ul>
+
+</td>
+<td>
+
+</td>
+</tr>
+</table>
+	<p style="text-align:center">
+	    <img class="stretch" width="80%" src="slides/superimposition.png" />
+	</p>
+</div>
+<hr>
+<div>
+	<h1>Composing CSS</h1>
+	<h2>CSS composes quite nicely</h2>
+	<table>
+	<tr>
+	<td>
+	<tt>BASE</tt> feature:
+	<pre><code style="color: #444;">.mybutton {
+    background: blue;
+}</code></pre>
+
+    </td>
+    <td>
+
+    </td>
+    </tr>
+    </table>
+</div>
+<hr>
+<div>
+	<h1>Composing CSS</h1>
+	<h2>CSS composes quite nicely</h2>
+	<table>
+	<tr>
+	<td>
+	<tt>BASE</tt> feature:
+	<pre><code style="color: #444;">.mybutton {
+    background: blue;
+}</code></pre>
+	<tt>CUSTOMER_A_CI</tt> feature:
+	<pre><code style="color: #444;">.mybutton {
+    background: green;
+    border-radius: 5px;
+}</code></pre>
+    </td>
+    <td>
+
+    </td>
+    </tr>
+    </table>
+</div>
+<hr>
+<div>
+	<h1>Composing CSS</h1>
+	<h2>CSS composes quite nicely</h2>
+	<table>
+	<tr>
+	<td>
+	<tt>BASE</tt> feature:
+	<pre><code style="color: #444;">.mybutton {
+    background: blue;
+}</code></pre>
+	
+	<tt>CUSTOMER_A_CI</tt> feature:
+	<pre><code style="color: #444;">.mybutton {
+    background: green;
+    border-radius: 5px;
+}</code></pre>
+    </td>
+    <td>
+<tt>CUSTOMER_A_CI</tt> <i>refines</i> the <tt>mybutton</tt> class:
+<ul style="margin-top:25px">
+    <li><i>refines</i> its background</li>
+    <li><i>introduces</i> a border radius</li>
+</ul>
+    </td>
+    </tr>
+    </table>
+</div>
+<hr>
+<div>
+	<h1>Composing JAVA</h1>
+	<tt>BASE</tt> feature:
+	<pre><code style="color: #444;">class A {
+    float foo() {
+        return 3.14;
+    }
+}</code></pre>
+	
+	<tt>FEATURE_A</tt> feature:
+	<pre><code style="color: #444;">class A {
+    float foo() {
+        return original() + 2.78;
+    }
+}</code></pre>
+</div>
+<hr>
+<div>
+	<h1>Composers and tools</h1>
+	<ul>
+		<li>FeatureHouse</li>
+		<li>FeatureC++</li>
+		<li>featuremonkey</li>
+		<li>Fuji</li>
+		<li>mbeddr</li>
+        <li>...</li>
+		<li>roll your own</li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>Benefits</h1>
+	<h2>Technical Benefits</h2>
+	<ul>
+		<li>feature model can be analyzed</li>
+		<li>dedicated abstraction for variability management</li>
+		<li>concept is easy to communicate</li>
+		<li>directly maps to requirements</li>
+		<li>feature tracebility (code of a feature is no longer scattered across the codebase)</li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>Benefits</h1>
+	<h2>Example organizational benefits include:</h2>
+	<ul>
+		<li>Improved productivity by as much as 10x</li>
+		<li>Increased quality by as much as 10x</li>
+		<li>Decreased cost by as much as 60%</li>
+		<li>Decreased labor needs by as much as 87%</li>
+		<li>Decreased time to market (to field, to launch) by as much as 98%</li>
+		<li>Ability to move into new markets in months, not years</li>
+	</ul>
+	(acc. to http://www.sei.cmu.edu/productlines/)
+</div>
+<hr>
+<div>
+	<h1>Q & A</h1>
+</div>
+<hr>
+<div>
+	<h1>References</h1>
+	
+	<h2>Software Product Lines and Feature Oriented Software Development</h2>
+	<ul>
+	    <li><a href="http://splc.net/fame.html">SPL Hall of Fame</a></li>
+	    <li><a href="http://www.sei.cmu.edu/productlines/">http://www.sei.cmu.edu/productlines/</a></li>
+	    <li><a href="http://ir.library.oregonstate.edu/xmlui/bitstream/handle/1957/19243/qual.pdf?sequence=1">Features and Feature Models: A Survey of Variation Representations (pdf)</a></li>
+	    <li><a href="http://www.jot.fm/issues/issue_2009_07/column5/index.html">Introduction to FOSD</a></li>
+	    <li><a href="http://fosd.de">http://fosd.de</a></li>
+	</ul>
+
+	<h2>Variability/Feature Modeling</h2>
+	<ul>
+	    <li><a href="http://www.cs.utexas.edu/~schwartz/ATS/fopdocs/guidsl.html">GUIDSL (part of AHEAD tool suite)</a></li>
+	    <li><a href="http://clafer.org">clafer</a></li>
+	    <li><a href="https://www.eclipse.org/featuremodel/">Eclipse EMF Feature Models</a></li>
+	    <li><a href="http://www.omgwiki.org/variability/doku.php">CVL</a></li>
+	    <li><a href="https://staff.info.unamur.be/acs/tvl/">TVL</a></li>
+	    <li><a href="http://wwwiti.cs.uni-magdeburg.de/iti_db/research/featureide/">featureIDE</a></li>
+	    <li><a href="http://wwwiti.cs.uni-magdeburg.de/iti_db/research/multiple/modeling.php">VELVET</a></li>
+	    <li><a href="http://t3-necsis.cs.uwaterloo.ca:8099/">Interactive Tutorial: Variability Management, Multi-Objective Optimization and Decision-Making in Software Product Line Engineering</a></li>
+	</ul>
+
+	<h2>Composers and Tools</h2>
+	<ul>
+	    <li><a href="http://github.com/joliebig/featurehouse">featureHouse</a></li>
+	    <li><a href="http://wwwiti.cs.uni-magdeburg.de/iti_db/fcc/">featureC++</a></li>
+	    <li><a href="http://github.com/henzk/featuremonkey">featuremonkey</a></li>
+	    <li><a href="http://www.infosun.fim.uni-passau.de/spl/apel/fuji/">Fuji</a></li>
+	    <li><a href="http://mbeddr.com/">mbeddr</a></li>
+	    <li><a href="http://github.com/henzk/django-productline">django-productline</a></li>
+	    <li><a href="http://wwwiti.cs.uni-magdeburg.de/iti_db/research/fosd-tools/">long list of tools for FOSD</a></li>
+	</ul>
+
+</div>
